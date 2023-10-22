@@ -1,0 +1,74 @@
+.header-container {
+    background-color: #76c9fe;
+    background-image: linear-gradient(to right, #76c9fe, #aaaaaa);
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    display: flex;
+}
+
+.title {
+
+    display: flex;
+    align-items: center;
+
+    margin: 0px 20px 0px 10px;
+    padding: 0px;
+    font-family: worm writing, sans-serif;
+    font-size: 20pt;
+    // font-weight: bold;
+    text-align: left;
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: grey;
+    text-decoration: underline;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.button {
+   display: flex;
+   align-items: center;
+
+   background-color: rgba(160, 160, 160, .5);
+   padding: 5px 10px;
+   border-radius: 20px;
+   margin: 0px 10px;
+}
+
+.button:hover {
+  background-color: rgba(160, 160, 160, .9);
+}
+
+.button-text {
+  margin: 0px;
+  opacity: 100%;
+
+  font-family: worm writing, sans-serif;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.button-link {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+}
+
+.project-title {
+   font-family: worm writing, sans-serif;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+span.emph {
+    font-style: italic
+}

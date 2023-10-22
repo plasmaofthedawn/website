@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page }} | plasmaofthedawn</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename='favicon/site.webmanifest') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="{{ url_for('static', filename='favicon/browserconfig.xml') }}">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+    <style>
+        @font-face {
+            font-family: 'Worm Writing';
+            src: url('{{ url_for('static', filename="WormWriting-Regular.woff2") }}') format('woff2'),
+                 url('{{ url_for('static', filename="WormWriting-Regular.woff") }}') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class=header-container>
+
+    <a href="/" class="title">plasmaofthedawn</a>
+
+    <a href="/about" class="button-link">
+        <div class="button">
+            <p class="button-text">about</p>
+        </div>
+    </a>
+
+    <a href="/projects" class="button-link">
+        <div class="button">
+            <p class="button-text">projects</p>
+        </div>
+    </a>
+
+    <a href="https://t3c.plasmaofthedawn.com" class="button-link">
+        <div class="button">
+            <p class="button-text">t3c</p>
+        </div>
+    </a>
+
+
+</div>
+
+<div id="content">
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+
+</body>
+</html>
