@@ -72,3 +72,16 @@ a {
 span.emph {
     font-style: italic
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+}
+
+.no_decoration {
+    text-decoration: none;
+}
