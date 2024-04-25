@@ -1,10 +1,27 @@
 .header-container {
     background-color: #76c9fe;
-    background-image: linear-gradient(to right, #76c9fe, #aaaaaa);
+    background-image: linear-gradient(to right, #76c9fe, #6d94d4);
     padding: 5px 15px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 
     display: flex;
+
+    margin-bottom: 15px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+body {
+    height: 100Vh;
+    background: rgb(138,226,53);
+    background: linear-gradient(135deg, rgba(138,226,53,1) 0%, rgba(141,53,226,1) 100%);ba(141,53,226,1) 100%);
+    background-attachment: fixed;
+
+    margin: 0px;
+
 }
 
 .title {
@@ -22,6 +39,18 @@
     text-decoration: none;
 }
 
+.content {
+    background-color: #CCD0DDCC;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+    width: 75%;
+    margin: 60px auto;
+    /*margin-bottom: 60px;*/
+
+    min-height: 75%;
+}
+
 p {
     font-family: Verdana, Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -36,11 +65,12 @@ a {
 .button {
    display: flex;
    align-items: center;
-
    background-color: rgba(160, 160, 160, .5);
    padding: 5px 10px;
    border-radius: 20px;
    margin: 0px 10px;
+
+   background-color: rgba(160, 160, 160, .5);
 }
 
 .button:hover {
@@ -78,10 +108,29 @@ span.emph {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: transparent;
+    
+    background-color: #6d94d4;
+    background-image: linear-gradient(to right, #6d94d4, #76c9fe);
+
     text-align: center;
+    padding: 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .no_decoration {
     text-decoration: none;
+}
+
+.badge_link {
+    /*display: inline;*/
+    text-decoration: none;
+    margin: 2px
+}
+
+.badge_link a {
+    display: block;
+    line-height: 0px;
 }

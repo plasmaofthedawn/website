@@ -55,7 +55,7 @@
 
 </div>
 
-<div id="content">
+<div class="content" id="content">
 
     {% block content %}
     {% endblock %}
@@ -63,14 +63,14 @@
 </div>
 
 <div class=footer>
-    <a href="https://plasmaofthedawn.com">
-        <img src="{{ url_for('static', filename='buttons/plasma.png') }}" title="this site", alt="plasma">
-    </a>
-    <a href="https://ceionia.com">
-        <img src="{{ url_for('static', filename='buttons/ceionia.png') }}" title="my friend lucy's site", alt="ceionia">
-    </a>
-    <a href="https://home.dory.moe">
-        <img src="{{ url_for('static', filename='buttons/dory.gif') }}" title="dory's possible empty site", alt="dory">
-    </a>
+    <div class=badge_link>
+        <a href="https://plasmaofthedawn.com"><img src="{{ url_for('static', filename='buttons/plasma.png') }}" title="this site" alt="plasma"></a>
+    </div>
+    <div class=badge_link>
+        <a href="https://ceionia.com"><img src="{{ url_for('static', filename='buttons/ceionia.png') }}" title="my friend lucy's site" alt="ceionia"></a>
+    </div>
+    <div class=badge_link>
+        <a href="https://dory.moe"><img src="{{ url_for('static', filename='buttons/dory.gif') }}" title="dory's possible empty site" alt="dory"></a>
+    </div>
 </body>
 </html>
